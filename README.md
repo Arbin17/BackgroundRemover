@@ -1,4 +1,6 @@
 This is the background remover from images.
+
+
 Original Image
 
 ![mikey](https://github.com/user-attachments/assets/7b360af4-9983-4574-8ab0-dc58f1e3fd0e) 
