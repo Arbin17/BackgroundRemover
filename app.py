@@ -26,7 +26,7 @@ def upload():
         file_path = os.path.join(UPLOAD_FOLDER, file.filename)
         file.save(file_path)
         output_path = remove_background(file_path)
-        return redirect(url_for('show_image', filename=os.path.basename(output_path)))
+        return send_file(output_path, as_attachment=True)
 
 @app.route('/uploads/<filename>')
 def show_image(filename):
