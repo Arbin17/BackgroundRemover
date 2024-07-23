@@ -1,0 +1,91 @@
+body {
+    background: url('/static/images/background.jpg');
+    background-size: cover; /* Ensure the background image covers the entire viewport */
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for the container */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+input[type="file"],
+input[type="text"] {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    color: #000;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.image-box {
+    border: 2px solid #007BFF; /* Blue border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Padding inside the box */
+    margin: 20px auto; /* Center the box */
+    display: inline-block; /* Fit the content */
+    background: rgba(255, 255, 255, 0.8); /* Light background for better visibility */
+    max-width: 100%; /* Ensure box fits within its container */
+    max-height: 500px; /* Limit height to avoid overflow */
+    overflow: hidden; /* Hide overflowed parts of the image */
+}
+
+img {
+    display: block; /* Remove bottom space below image */
+    width: 100%; /* Make image fill the box width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure image covers the box without stretching */
+    border-radius: 10px; /* Rounded corners for the image */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #28a745;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
